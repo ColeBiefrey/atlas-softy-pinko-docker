@@ -1,0 +1,1 @@
+## These folders are to help me understand how to utilize docker
