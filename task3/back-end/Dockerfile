@@ -10,10 +10,10 @@ RUN apt-get install -y python3 python3-pip
 # remove EXTERNALLY-MANAGED if necessary to avoid errors
 RUN rm /usr/lib/python*/EXTERNALLY-MANAGED || true
 
-# install Flask using pip3
-RUN pip3 install flask
+# install Flask and Flask-CORS using pip3
+RUN pip3 install flask flask-cors
 
-# set working directory to /app
+# set the working directory to /app
 WORKDIR /app
 
 # copy Python script to container
