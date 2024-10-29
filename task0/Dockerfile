@@ -1,8 +1,8 @@
-# Use the latest Ubuntu image
+# use latest Ubuntu image
 FROM ubuntu:latest
 
-# Update and upgrade the system
+# update slash upgrade system
 RUN apt-get update && apt-get upgrade -y
 
-# Define the command to run when the container starts (using JSON syntax)
+# define command to run when container starts 
 CMD ["echo", "Hello, World!"]
